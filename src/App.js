@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './Pages/Navbar/Navbar'
 import useMediaQuery from './Hooks/useMediaQuery';
 import DotGroup from './Pages/DotGroup/DotGroup';
+import Landing from './Pages/Landing';
 
 function App() {
   const [selectedPages, setSelectedPages] = useState('home');
@@ -23,11 +24,12 @@ function App() {
   return (
     <div className="app bg-deep-blue">
       <Navbar isTopOfPage={isTopOfPage} selectedPage={selectedPages} setSelectedPages={setSelectedPages} />
-      <div className='w-5/6 mx-auto md:h-full'>
+      <div className="w-5/6 mx-auto md:h-full">
         {
           isAboveMediaScreens && <DotGroup isTopOfPage={isTopOfPage} selectedPage={selectedPages} setSelectedPages={setSelectedPages}/>
         }
       </div>
+      <Landing setSelectedPages={setSelectedPages}/>
     </div>
   );
 }

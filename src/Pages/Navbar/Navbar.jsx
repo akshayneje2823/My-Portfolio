@@ -1,4 +1,4 @@
-import React, {  useState } from 'react';
+import React, { useState } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import useMediaQuery from '../../Hooks/useMediaQuery';
 import menuIcon from '../../assets/menu-icon.svg'
@@ -44,7 +44,6 @@ function Navbar({ isTopOfPage, selectedPage, setSelectedPage }) {
                 }
 
                 {/* MOBILE MENU POPUP */}
-
                 {
                     !isAboveSmallScreens && isMenuToggled && (
                         <div className='fixed bottom-0 right-0 h-full bg-blue w-[300px]'>
@@ -65,7 +64,6 @@ function Navbar({ isTopOfPage, selectedPage, setSelectedPage }) {
                                 ))}
                             </div>
                         </div>
-
                     )
                 }
             </div>
