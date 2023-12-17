@@ -33,7 +33,7 @@ function Navbar({ isTopOfPage, selectedPage, setSelectedPage }) {
                         {["Home", 'Skills', "Projects", "Testimonials", "Contact"].map(ele => (
                             <Link page={ele}
                                 selectedPage={selectedPage}
-                                setSelectedPage={ele}
+                                setSelectedPage={setSelectedPage}
                             />
                         ))}
                     </div>) : (<button
@@ -60,7 +60,7 @@ function Navbar({ isTopOfPage, selectedPage, setSelectedPage }) {
                                 {["Home", 'Skills', "Projects", "Testimonials", "Contact"].map(ele => (
                                     <Link page={ele}
                                         selectedPage={selectedPage}
-                                        setSelectedPage={ele}
+                                        setSelectedPage={setSelectedPage}
                                     />
                                 ))}
                             </div>
