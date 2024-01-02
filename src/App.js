@@ -26,10 +26,10 @@ function App() {
       <Navbar isTopOfPage={isTopOfPage} selectedPage={selectedPages} setSelectedPages={setSelectedPages} />
       <div className="w-5/6 mx-auto md:h-full">
         {
-          isAboveMediaScreens && <DotGroup isTopOfPage={isTopOfPage} selectedPage={selectedPages} setSelectedPages={setSelectedPages}/>
+          isAboveMediaScreens && <DotGroup isTopOfPage={isTopOfPage} selectedPage={selectedPages} setSelectedPages={setSelectedPages} />
         }
+        <Landing setSelectedPages={setSelectedPages} />
       </div>
-      <Landing setSelectedPages={setSelectedPages}/>
     </div>
   );
 }
