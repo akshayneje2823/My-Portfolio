@@ -4,7 +4,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 import useMediaQuery from '../Hooks/useMediaQuery';
 import SocialMediaIcons from '../Components/SocialMediaIcons';
 
-function Landing({ setSelectedPages }) {
+function Landing({ setSelectedPage }) {
     const isAboveMediaScreens = useMediaQuery("(min-width:1200px)");
 
     return (
@@ -66,7 +66,7 @@ function Landing({ setSelectedPages }) {
                     initial='hidden'
                     whileInView={'visible'}
                     viewport={{ once: true, amount: 0.5 }}
-                    transition={{ delay: 0.2, duration:1 }}
+                    transition={{ delay: 0.2, duration: 1 }}
                     variants={{
                         hidden: { opacity: 0, x: -50 },
                         visible: { opacity: 1, x: 0 }
@@ -76,13 +76,13 @@ function Landing({ setSelectedPages }) {
                         className='bg-gradient-rainbow text-deep-blue rounded-sm py-3 px-7 font-semibold
                          hover:bg-blue hover:text-white transition duration-500'
                         href='#contact'
-                        onClick={() => setSelectedPages('contact')}>
+                        onClick={() => setSelectedPage('contact')}>
                         Contact Me
                     </AnchorLink>
                     <AnchorLink
                         className='rounded-r-sm bg-gradient-rainbow py-0.5 pr-0.5 '
                         href='#contact'
-                        onClick={() => setSelectedPages('contact')}>
+                        onClick={() => setSelectedPage('contact')}>
                         <div className='bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center font-playfair px-10 '>
 
                             Let's talk
@@ -101,7 +101,7 @@ function Landing({ setSelectedPages }) {
                         visible: { opacity: 1, x: 0 }
                     }}
                 >
-                    <SocialMediaIcons/>
+                    <SocialMediaIcons />
                 </motion.div>
             </div>
         </section>
