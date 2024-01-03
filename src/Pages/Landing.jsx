@@ -12,7 +12,7 @@ function Landing({ setSelectedPages }) {
 
 
             {/* Img Section */}
-            <div className="basis-3/5 z-10 mt-20 md:mt-32 flex justify-center md:order-2">
+            <div className="basis-2/5 z-10 mt-20 md:mt-32 flex justify-center md:order-2">
                 {isAboveMediaScreens ? (
                     <div
                         className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[400px]
@@ -40,7 +40,7 @@ function Landing({ setSelectedPages }) {
                     initial='hidden'
                     whileInView={'visible'}
                     viewport={{ once: true, amount: 0.5 }}
-                    transition={{ duration: 0.5 }}
+                    transition={{ duration: 1 }}
                     variants={{
                         hidden: { opacity: 0, x: -50 },
                         visible: { opacity: 1, x: 0 }
@@ -66,7 +66,7 @@ function Landing({ setSelectedPages }) {
                     initial='hidden'
                     whileInView={'visible'}
                     viewport={{ once: true, amount: 0.5 }}
-                    transition={{ delay: 0.2, duration: 0.5 }}
+                    transition={{ delay: 0.2, duration:1 }}
                     variants={{
                         hidden: { opacity: 0, x: -50 },
                         visible: { opacity: 1, x: 0 }
@@ -95,7 +95,7 @@ function Landing({ setSelectedPages }) {
                     initial='hidden'
                     whileInView={'visible'}
                     viewport={{ once: true, amount: 0.5 }}
-                    transition={{ delay: 0.4, duration: 0.5 }}
+                    transition={{ delay: 0.4, duration: 1 }}
                     variants={{
                         hidden: { opacity: 0, x: -50 },
                         visible: { opacity: 1, x: 0 }
