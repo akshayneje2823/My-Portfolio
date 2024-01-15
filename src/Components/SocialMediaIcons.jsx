@@ -37,7 +37,7 @@ function SocialMediaIcons() {
                     href={item.link}
                     target='_blank'
                     rel='noreferrer'>
-                    <img src={item.img} alt="Linkedin_link" />
+                    <img src={item.img} alt="social_media_link" />
                 </a>)
             }
         </div>

@@ -6,7 +6,7 @@ import DotGroup from './Pages/DotGroup/DotGroup';
 import Landing from './Pages/Landing';
 import LineGradient from './Pages/LineGradient'
 import MySkills from './Pages/MySkills';
-
+import Projects from './Pages/Projects'
 function App() {
   const [selectedPage, setSelectedPage] = useState('home');
   const [isTopOfPage, setIsTopOfPage] = useState(true)
@@ -33,9 +33,12 @@ function App() {
         }
         <Landing setSelectedPage={setSelectedPage} />
       </div>
-      <LineGradient />
+      {/* <LineGradient /> */}
       <div className='w-5/6 mx-auto md:h-full'>
         <MySkills />
+      </div>
+      <div className='w-5/6 mx-auto'>
+        <Projects />
       </div>
     </div>
   );
